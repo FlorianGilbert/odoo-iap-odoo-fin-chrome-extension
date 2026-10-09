@@ -1,19 +1,25 @@
-# IAP Utils
+# IAP/Odoo Fin Utils
+
+## Original Repo
+
+[RIGR's repo](https://github.com/RicGR98/odoo-iap-chrome-extension)
 
 ## Overview
 
 This Chrome extension adds a popup on Odoo instances to ease the switching of
-config parameters and IAP accounts.
+config parameters and IAP/Odoo Fin accounts.
 
 ## Installation
 
-1. Download the sources
+1. Download the sources by clicking on `Code` on the right
 2. Unzip them in the directory of your choice
 3. Go to [chrome://extensions/](chrome://extensions/)
 4. Activate the Developer mode (top right corner)
 5. Click on Load unpacked (top left corner)
 6. Select the folder you've chosen
 7. Pin the extension in your toolbar if you wish so
+
+[Installation video](https://drive.google.com/file/d/1rkqsS9CAYlhJ_DvOjivTZw8cY9fpguRo/view?usp=sharing)
 
 ## Usage
 
@@ -34,3 +40,20 @@ be displayed on the popup (i.e. "prod"), and a value that will be used (e.g. htt
 
 You can show/hide each key (to avoid deleting it completely), as well as show/hide the entire
 Config Parameters or IAP Accounts sections.
+
+By default that's the IAP settings, if needed here is the Odoo Fin ones:
+
+```
+{
+    "account_online_synchronization.proxy_mode": {
+        "Internal": "internal",
+        "Production": "production",
+        "Sandbox": "sandbox",
+        "show": true
+    },
+    "database.uuid": {
+        "IAP Skip": "skip_check_subscription",
+        "show": true
+    }
+}
+```
